@@ -1,0 +1,56 @@
+{
+  "name": "zhaoyang-dng-kepu-wenan-suchanchu-skills",
+  "version": "0.2.0",
+  "description": "Codex plugin and skills for Zhaoyang-style Chinese public-education scriptwriting, Excalidraw canvases, and MCP canvas operations.",
+  "license": "MIT",
+  "author": "Zhaoyang Skills Maintainers",
+  "homepage": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills/issues"
+  },
+  "type": "module",
+  "bin": {
+    "zhaoyang-validate": "scripts/validate-skills.mjs",
+    "zhaoyang-doctor": "scripts/excalidraw-doctor.mjs",
+    "zhaoyang-canvas": "scripts/zhaoyang-canvas.mjs",
+    "zhaoyang-install-skills": "scripts/install-agent-skills.mjs"
+  },
+  "files": [
+    ".agents/",
+    ".claude/",
+    ".node-version",
+    "plugins/",
+    "scripts/",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs",
+    "pack:dry-run": "npm pack --dry-run",
+    "sync:agent-skills": "node scripts/sync-agent-skills.mjs",
+    "excalidraw:doctor": "node scripts/excalidraw-doctor.mjs",
+    "excalidraw:canvas:start": "node scripts/zhaoyang-canvas.mjs start",
+    "excalidraw:canvas:stop": "node scripts/zhaoyang-canvas.mjs stop",
+    "excalidraw:canvas:status": "node scripts/zhaoyang-canvas.mjs status",
+    "excalidraw:canvas:docker": "node scripts/zhaoyang-canvas.mjs docker"
+  },
+  "keywords": [
+    "codex",
+    "codex-plugin",
+    "skill",
+    "skills",
+    "excalidraw",
+    "chinese",
+    "scriptwriting",
+    "zhaoyang"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "excalidraw": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-excalidraw-server@1.0.6"
+      ],
+      "env": {
+        "EXPRESS_SERVER_URL": "http://127.0.0.1:3000",
+        "ENABLE_CANVAS_SYNC": "true"
+      }
+    }
+  }
+}

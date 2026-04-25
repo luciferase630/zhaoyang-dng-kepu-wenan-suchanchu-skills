@@ -1,0 +1,20 @@
+{
+  "name": "zhaoyang-dng-kepu-wenan-suchanchu-skills",
+  "interface": {
+    "displayName": "朝阳不吐不快 dng 科普文案速产出 Skills"
+  },
+  "plugins": [
+    {
+      "name": "zhaoyang-dng-kepu-wenan-suchanchu",
+      "source": {
+        "source": "local",
+        "path": "./plugins/zhaoyang-dng-kepu-wenan-suchanchu"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

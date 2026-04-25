@@ -1,0 +1,11 @@
+interface:
+  display_name: "朝阳 Excalidraw 科普画布"
+  short_description: "按朝阳不吐不快风格组织 Excalidraw 科普画布。"
+  default_prompt: "Use $zhaoyang-excalidraw-explainer to turn this topic into a clear Excalidraw explainer canvas."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "excalidraw"
+      description: "Excalidraw MCP server for live canvas operations; use $zhaoyang-excalidraw-toolkit for fallback and verification."
+      transport: "stdio"

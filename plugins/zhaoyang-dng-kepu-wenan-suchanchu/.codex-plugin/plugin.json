@@ -1,0 +1,40 @@
+{
+  "name": "zhaoyang-dng-kepu-wenan-suchanchu",
+  "version": "0.2.0",
+  "description": "Codex skills for Zhaoyang-style Chinese public-education video scripts, Excalidraw explainer canvases, and MCP canvas operations.",
+  "author": {
+    "name": "Zhaoyang Skills Maintainers",
+    "url": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills"
+  },
+  "homepage": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills#readme",
+  "repository": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "excalidraw",
+    "scriptwriting",
+    "chinese"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "朝阳不吐不快 dng 科普文案速产出",
+    "shortDescription": "生成中文科普讲解稿，并组织配套 Excalidraw 教学画布。",
+    "longDescription": "面向中文科普视频工作流的 Codex plugin，内置口播稿写作、Excalidraw 知识图设计，以及通过 MCP 或 REST fallback 操作实时画布的工具箱。",
+    "developerName": "Zhaoyang Skills Maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/luciferase630/zhaoyang-dng-kepu-wenan-suchanchu-skills",
+    "defaultPrompt": [
+      "Use $zhaoyang-explainer-scriptwriter to draft a Chinese explainer video script.",
+      "Use $zhaoyang-excalidraw-explainer to design an Excalidraw explainer canvas.",
+      "Use $zhaoyang-excalidraw-toolkit to inspect and export the live canvas."
+    ],
+    "brandColor": "#E03131"
+  }
+}
